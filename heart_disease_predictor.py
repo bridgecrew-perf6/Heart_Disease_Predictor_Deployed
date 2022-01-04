@@ -4,6 +4,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
+from sklearn.ensemble import RandomForestClassifier
 import os
 
 
@@ -13,13 +14,13 @@ def disease_predictor(temp):
     X.loc[len(X)]=temp
     X=pd.get_dummies(X)
     y = df['HeartDisease']
-    clf= LinearRegression()
+    clf= RandomForestClassifier(n_estimators=1000,n_jobs=5,random_state=4)
     X1=X.iloc[:918,:]
     
     clf.fit(X1,y)
     
     y_pred=clf.predict(X1)
-    print(r2_score(y,y_pred))
+#   print(r2_score(y,y_pred))
     X_ip=X.loc[len(X)-1]
     X_ip=pd.DataFrame(X_ip).T                            
     r=clf.predict(X_ip)
