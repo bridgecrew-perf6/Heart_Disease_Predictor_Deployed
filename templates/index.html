@@ -1,8 +1,4 @@
 <<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,22 +8,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
-    <body  style="background-color:Gold;">
-        <h1 style="text-align:center;">Heart Disease Predictior</h1>
+    <body  style="background: linear-gradient(to top, #000066 0%, #9900cc 100%);">
+        <h1 style="text-align:center;color:Azure;">Heart Disease Predictior</h1>
         <form action="/" method="POST">
-            <input  style="margin-left:45%;" type="number" name="AGE" placeholder="AGE" required="required">Fill your Age</input>   
-            Fill M or F<input style="margin-left:45%;" type="text" name="Sex" placeholder="Gender" required="required" />Fill M/F</input> 
-            <input style="margin-left:45%;" type="text" name="Chest_Pain" placeholder="Chest Pain Type" required="required" />Fill ASY/ATA/NAP/TA</input> 
-            <input style="margin-left:45%;" type="number" name="RestingBP" placeholder="Resting BP" required="required" />Fill Resting Blood Pressure</input> 
-            <input style="margin-left:45%;" type="number" name="Cholestrol" placeholder="Cholestrol" required="required" />Fill Cholestrol</input> 
-            <input style="margin-left:45%;" type="number" name="FastingBS" placeholder="Fasting BS" required="required" />Fill Fasting Blood Sugar</input> 
-            <input style="margin-left:45%;" type="text" name="RestingECG" placeholder="Resting ECG" required="required" />Fill LVH/Normal/ST</input> 
-            <input style="margin-left:45%;" type="number" name="MaxHR" placeholder="MaxHR" required="required" />Fill Max Heart Rate</input> 
-            <input style="margin-left:45%;" type="text" name="ExerciseAngina" placeholder="Exercise Angina" required="required" />Fill Y/N if Chest pain during Exercise</input> 
-            <input style="margin-left:45%;" type="number" name="OldPeak" placeholder="Old Peak" required="required" />Fill Old Peak from -3 to 7</input> 
-            <input style="margin-left:45%;" type="text"  name="St_Slope" placeholder="St Slope" required="required" />Fill ST slope Down/Flat/Up</input> 
+            <input  style="margin-left:40%;" type="number" name="AGE" placeholder="AGE" required="required">Fill your Age</input>   
+            <input style="margin-left:40%;" type="text" name="Sex" placeholder="Gender" required="required" />Fill M/F</input> 
+            <input style="margin-left:40%;" type="text" name="Chest_Pain" placeholder="Chest Pain Type" required="required" />Fill ASY/ATA/NAP/TA</input> 
+            <input style="margin-left:40%;" type="number" name="RestingBP" placeholder="Resting BP" required="required" />Fill Resting Blood Pressure</input> 
+            <input style="margin-left:40%;" type="number" name="Cholestrol" placeholder="Cholestrol" required="required" />Fill Cholestrol</input> 
+            <input style="margin-left:40%;" type="number" name="FastingBS" placeholder="Fasting BS" required="required" />Fill Fasting Blood Sugar</input> 
+            <input style="margin-left:40%;" type="text" name="RestingECG" placeholder="Resting ECG" required="required" />Fill LVH/Normal/ST</input> 
+            <input style="margin-left:40%;" type="number" name="MaxHR" placeholder="MaxHR" required="required" />Fill Max Heart Rate</input> 
+            <input style="margin-left:40%;" type="text" name="ExerciseAngina" placeholder="Exercise Angina" required="required" />Fill Y/N if Chest pain during Exercise</input> 
+            <input style="margin-left:40%;" type="number" name="OldPeak" placeholder="Old Peak" required="required" />Fill Old Peak from -3 to 7</input> 
+            <input style="margin-left:40%;" type="text"  name="St_Slope" placeholder="St Slope" required="required" />Fill ST slope Down/Flat/Up</input> 
            
-          <button type="submit" onclick='alert("You can call Ambulance 108")' style="width: 300px; margin-left: 40%;" class="btn btn-primary btn-block btn-large">Submit</button>
+          <button type="submit" onclick='alert("You can call Ambulance 108")' style="width: 300px; margin-left: 35%;" class="btn btn-primary btn-block btn-large">Submit</button>
         </form>
         
         {% if prediction %}
