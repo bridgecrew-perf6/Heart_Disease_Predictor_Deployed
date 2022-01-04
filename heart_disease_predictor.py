@@ -8,7 +8,7 @@ import os
 
 
 def disease_predictor(temp):
-    df=pd.read_csv('Randomforest\heart_disease_xgboost\heart.csv')
+    df=pd.read_csv('heart.csv')
     X=df.drop(columns = 'HeartDisease')
     X.loc[len(X)]=temp
     X=pd.get_dummies(X)
