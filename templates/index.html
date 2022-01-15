@@ -10,77 +10,82 @@
              div {
               margin-bottom: 10px;
             }
+            label {
+                display: inline-block;
+                width: 200px;
+                
+              }
         </style>
     </head>
     <body>
         <h1 style="text-align:center">Heart Disease Predictior</h1>
         <center>
             <form action="/" method="POST">
-                <div>
-            <label for="Age">Fill Your Age:</label>
+            <div>
+            <label for="Age">Fill Your Age</label>
             <input  type="number" name="AGE" placeholder="AGE" required="required" />   
-                </div>
-                    <div>
-            <label for="Sex">Gender:</label>
+            </div>
+            <div>
+            <label for="Sex">Gender</label>
             <select name="Sex" id="Sex" style=" width: 170px;">
                 <option value="M">M</option>
                 <option value="F">F</option>
             </select>
-                    </div>
-                        <div>
-            <label for="Chest_Pain">Fill Chest Pain Type:</label>
+            </div>
+            <div>
+            <label for="Chest_Pain">Fill Chest Pain Type</label>
             <select name="Chest_Pain" id="Chest_Pain" style=" width: 170px;">
                 <option value="ASY">ASY</option>
                 <option value="NAP">NAP</option>
                 <option value="ATA">ATA</option>
                 <option value="TA">TA</option>
             </select>
-                        </div>
-                            <div>
-            <label for="RestingBP">Fill Resting Blood Pressure:</label>
+            </div>
+            <div>
+            <label for="RestingBP">Fill Resting Blood Pressure</label>
             <input  type="number" name="RestingBP" placeholder="RestingBP" required="required" />
-                            </div>
-                                <div>
-            <label for="Cholestrol">Fill Cholestrol:</label>
+            </div>
+            <div>
+            <label for="Cholestrol">Fill Cholestrol</label>
             <input  type="number" name="Cholestrol" placeholder="Cholestrol" required="required" />
-                                </div>
-                                    <div>
-            <label for="FastingBS">Fill Fasting Blood Sugar level:</label>
+            </div>
+            <div>
+            <label for="FastingBS">Fill Fasting Blood Sugar level</label>
             <input  type="number" name="FastingBS" placeholder="FastingBS" required="required" />
-                                    </div>
-                                        <div>
-            <label for="RestingECG">Fill Resting ECG:</label>
+            </div>
+            <div>
+            <label for="RestingECG">Fill Resting ECG</label>
             <select name="RestingECG" id="RestingECG"style=" width: 170px;">
                 <option value="Normal">Normal</option>
                 <option value="ST">ST</option>
                 <option value="LVH">LVH</option>
             </select>
-                                        </div>
-                                            <div>
-            <label for="MaxHR"style="margin-left:28.25%;">Fill Max Heart Rate:</label>
+            </div>
+            <div>
+            <label for="MaxHR">Fill Max Heart Rate</label>
             <input type="number" name="MaxHR" placeholder="MaxHR" required="required" />
-                                            </div>
-                                                <div>
+            </div>
+            <div>
             <label for="ExerciseAngina">Fill Exercise Angina:</label>
-            <select name="ExerciseAngina" id="ExerciseAngina"style="margin-left:.40%; width: 170px;">
+            <select name="ExerciseAngina" id="ExerciseAngina"style="width: 170px;">
                 <option value="Y">Yes</option>
                 <option value="N">No</option>
             </select>
-                                                </div>
-                                                    <div>
-            <label for="OldPeak"style="margin-left:31.75%;">Fill Old Peak:</label>
+            </div>
+            <div>
+            <label for="OldPeak">Fill Old Peak:</label>
             <input  type="number" name="OldPeak" placeholder="OldPeak" required="required" />
-                                                    </div>
-                                                        <div>
+            </div>
+            <div>
             <label for="St_Slope">Fill ST Slope:</label>
-            <select name="St_Slope" id="St_Slope" width: 170px;">
+            <select name="St_Slope" id="St_Slope" style="width: 170px;">
                 <option value="Flat">Flat</option>
                 <option value="Up">Up</option>
                 <option value="Down">Down</option>
             </select>
-                                    </div>
-                                    <div>
-          <button type="submit" onclick='alert("You can call Ambulance 108")' style="width: 300px; margin-left: 35%;" class="btn btn-primary btn-block btn-large">Submit</button>
+            </div>
+        <div>
+          <button type="submit" onclick='alert("You can call Ambulance 108")' style="width: 300px; " class="btn btn-primary btn-block btn-large">Submit</button>
         </div>
         </form>
         </center>
