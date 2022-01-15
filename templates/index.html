@@ -1,60 +1,62 @@
 <<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Heart Disease Predictor</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <style type="text/css">
+            body {
+                background-image: url({{url_for('static',filename='heart.jpg')}});
+                background-size: cover;   
+             }
+
     </head>
     <body  style="background: linear-gradient(to top, #000066 0%, #9900cc 100%);">
-        <h1 style="text-align:center;color:Azure;">Heart Disease Predictior</h1>
-                <form action="/" method="POST">
-            <label for="Age"style="margin-left:31.75%;">Fill Your Age:</label>
-            <input  style="margin-left:.4%;" type="number" name="AGE" placeholder="AGE" required="required" />   </br>
-            <label for="Sex"style="margin-left:35%;">Gender:</label>
-            <select name="Sex" id="Sex" style="margin-left:5; width: 170px;">
+        <h1 style="text-align:center">Heart Disease Predictior</h1>
+        <center>
+            <form action="/" method="POST">
+            <label for="Age">Fill Your Age:</label>
+            <input  type="number" name="AGE" placeholder="AGE" required="required" />   </br>
+            <label for="Sex">Gender:</label>
+            <select name="Sex" id="Sex" style=" width: 170px;">
                 <option value="M">M</option>
                 <option value="F">F</option>
             </select></br>
-            <label for="Chest_Pain"style="margin-left:28.1%;">Fill Chest Pain Type:</label>
-            <select name="Chest_Pain" id="Chest_Pain"style="margin-left:.4%; width: 170px;">
+            <label for="Chest_Pain">Fill Chest Pain Type:</label>
+            <select name="Chest_Pain" id="Chest_Pain" style=" width: 170px;">
                 <option value="ASY">ASY</option>
                 <option value="NAP">NAP</option>
                 <option value="ATA">ATA</option>
                 <option value="TA">TA</option>
             </select></br>
-            <label for="RestingBP"style="margin-left:24.3%;">Fill Resting Blood Pressure:</label>
-            <input style="margin-left:.40%;" type="number" name="RestingBP" placeholder="RestingBP" required="required" /></br>
-            <label for="Cholestrol"style="margin-left:31.2%;">Fill Cholestrol:</label>
-            <input style="margin-left:.40%;" type="number" name="Cholestrol" placeholder="Cholestrol" required="required" /></br>
-            <label for="FastingBS"style="margin-left:22.98%;">Fill Fasting Blood Sugar level:</label>
-            <input style="margin-left:.4%;" type="number" name="FastingBS" placeholder="FastingBS" required="required" /></br>
-            <label for="RestingECG"style="margin-left:29.72%;">Fill Resting ECG:</label>
-            <select name="RestingECG" id="RestingECG"style="margin-left:.40%; width: 170px;">
+            <label for="RestingBP">Fill Resting Blood Pressure:</label>
+            <input  type="number" name="RestingBP" placeholder="RestingBP" required="required" /></br>
+            <label for="Cholestrol">Fill Cholestrol:</label>
+            <input  type="number" name="Cholestrol" placeholder="Cholestrol" required="required" /></br>
+            <label for="FastingBS">Fill Fasting Blood Sugar level:</label>
+            <input  type="number" name="FastingBS" placeholder="FastingBS" required="required" /></br>
+            <label for="RestingECG">Fill Resting ECG:</label>
+            <select name="RestingECG" id="RestingECG"style=" width: 170px;">
                 <option value="Normal">Normal</option>
                 <option value="ST">ST</option>
                 <option value="LVH">LVH</option>
             </select></br>
             <label for="MaxHR"style="margin-left:28.25%;">Fill Max Heart Rate:</label>
-            <input style="margin-left:.40%;" type="number" name="MaxHR" placeholder="MaxHR" required="required" /></br>
-            <label for="ExerciseAngina"style="margin-left:28%;">Fill Exercise Angina:</label>
+            <input type="number" name="MaxHR" placeholder="MaxHR" required="required" /></br>
+            <label for="ExerciseAngina">Fill Exercise Angina:</label>
             <select name="ExerciseAngina" id="ExerciseAngina"style="margin-left:.40%; width: 170px;">
                 <option value="Y">Yes</option>
                 <option value="N">No</option>
             </select></br>
             <label for="OldPeak"style="margin-left:31.75%;">Fill Old Peak:</label>
-            <input style="margin-left:.40%;" type="number" name="OldPeak" placeholder="OldPeak" required="required" /></br>
-            <label for="St_Slope"style="margin-left:31.77%;">Fill ST Slope:</label>
-            <select name="St_Slope" id="St_Slope"style="margin-left:.40%; width: 170px;">
+            <input  type="number" name="OldPeak" placeholder="OldPeak" required="required" /></br>
+            <label for="St_Slope">Fill ST Slope:</label>
+            <select name="St_Slope" id="St_Slope" width: 170px;">
                 <option value="Flat">Flat</option>
                 <option value="Up">Up</option>
                 <option value="Down">Down</option>
             </select></br>
           <button type="submit" onclick='alert("You can call Ambulance 108")' style="width: 300px; margin-left: 35%;" class="btn btn-primary btn-block btn-large">Submit</button>
         </form>
-        
+        </center>
         {% if prediction %}
             <h1 style="text-align:center; color:Crimson; font-size: 100px; " >{{ prediction }}</h1>
         {% endif %}
